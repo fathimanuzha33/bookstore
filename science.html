@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Books</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1, p {
+      text-align: center;
+    }
+    .book-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+      gap: 20px; /* Space between tiles */
+      width: 90%; /* Container width */
+      max-width: 1200px; /* Maximum width */
+    }
+    .book {
+      border: 1px solid #ccc; /* Border for each tile */
+      border-radius: 8px; /* Rounded corners */
+      padding: 10px; /* Padding inside the tile */
+      text-align: center; /* Center text */
+      height: 300px; /* Fixed height for uniformity */
+      display: flex;
+      flex-direction: column; /* Align children vertically */
+      justify-content: space-between; /* Space out content */
+    }
+    img {
+      width: 100%; /* Make image responsive */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 4px; /* Rounded image corners */
+      flex-grow: 1; /* Allow image to grow */
+    }
+  </style>
+</head>
+<body>
+  <h1>Science Books</h1>
+  <p>Here you can find a collection of science books.</p>
+  
+  <div class="book-container">
+    <div class="book">
+      <strong>Science</strong>
+      <img src="science.jpg" alt="Knowledge Encyclopedia">
+    </div>
+    <div class="book">
+      <strong>Infinite Powers</strong>
+      <img src="scienc.webp" alt="Infinite Powers">
+    </div>
+    <div class="book">
+      <strong>Bottle of Lies</strong>
+      <img src="sci.webp" alt="Bottle of Lies">
+    </div>
+    <div class="book">
+      <strong>The Book of Why</strong>
+      <img src="imagesscience.jpg" alt="The Book of Why">
+    </div>
+  </div>
+</body>
+</html>

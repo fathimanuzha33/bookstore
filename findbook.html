@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Results</title>
+  <style>
+    /* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5; /* Light grey background for the entire page */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styling for the heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+/* Styling for the results section */
+.results {
+    width: 80%; /* Takes up 80% of the screen width */
+    max-width: 1000px; /* Max width to prevent stretching on larger screens */
+    background-color: #fff; /* White background for the results area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Styling for book list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling for book details */
+ul li strong {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a button {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+/* Back to search button styling */
+a {
+    text-decoration: none;
+}
+
+a button {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .results {
+        width: 90%; /* For smaller screens, make the results section take 90% width */
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        width: 100%; /* Make buttons full-width on smaller screens */
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+  </style>
+</head>
+<body>
+  <h1>Search Results</h1>
+  <div class="results">
+    <h2>Books Found:</h2>
+    
+    <!-- Example Static Book List -->
+    <ul>
+      <li>
+        <strong>Title:</strong> Harry Potter and the Sorcerer's Stone <br>
+        <strong>Author:</strong> J.K. Rowling <br>
+        <strong>Category:</strong> Fiction <br>
+        <a href="fiction.html"><button>View More Fiction Books</button></a> <!-- Fiction Category Button -->
+      </li>
+      <li>
+        <strong>Title:</strong> Sapiens: A Brief History of Humankind <br>
+        <strong>Author:</strong> Yuval Noah Harari <br>
+        <strong>Category:</strong> Non-Fiction <br>
+        <a href="non-fiction.html"><button>View More Non-Fiction Books</button></a> <!-- Non-Fiction Category Button -->
+      </li>
+      <li>
+        <strong>Title:</strong> The Hound of the Baskervilles <br>
+        <strong>Author:</strong> Arthur Conan Doyle <br>
+        <strong>Category:</strong> Mystery <br>
+        <a href="mystery.html"><button>View More Mystery Books</button></a> <!-- Mystery Category Button -->
+      </li>
+      <li>
+        <strong>Title:</strong> A Brief History of Time <br>
+        <strong>Author:</strong> Stephen Hawking <br>
+        <strong>Category:</strong> Science <br>
+        <a href="science.html"><button>View More Science Books</button></a> <!-- Science Category Button -->
+      </li>
+    </ul>
+
+  </div>
+  
+  <a href="search.html"><button> Back to Search</button></a>
+</body>
+</html>

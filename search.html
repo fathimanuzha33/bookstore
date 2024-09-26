@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Search</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function updateAction() {
+      const category = document.getElementById('category').value;
+      const form = document.getElementById('search-form');
+      switch (category) {
+        case 'fiction':
+          form.action = 'fiction.html';
+          break;
+        case 'non-fiction':
+          form.action = 'non-fiction.html';
+          break;
+        case 'mystery':
+          form.action = 'mystery.html';
+          break;
+        case 'science':
+          form.action = 'science.html';
+          break;
+        default:
+          form.action = 'findbook.html';
+      }
+    }
+  </script>
+</head>
+<body>
+  <form id="search-form" method="GET" target="_blank" onsubmit="updateAction()">
+    <label for="book-title">Book Title:</label>
+    <input type="text" id="book-title" name="title" placeholder="Enter book title">
+    
+    <label for="category">Book Category:</label>
+    <select id="category" name="category" onchange="updateAction()">
+      <option value="">Select Category</option>
+      <option value="fiction">Fiction</option>
+      <option value="non-fiction">Non-Fiction</option>
+      <option value="mystery">Mystery</option>
+      <option value="science">Science</option>
+    </select>
+    
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" placeholder="Enter author name">
+    
+    <button type="submit">Find Book</button>
+  </form>
+</body>
+</html>
